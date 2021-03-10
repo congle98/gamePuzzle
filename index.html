@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Ghép ảnh cực mạnh</h1>
+<div><img id="change1" src="ảnh/11.png" height="400" width="800" onclick="ol1()"/></div>
+<div></div><img id="change2" src="ảnh/22.png" height="400" width="800" onclick="ol2()"/></div>
+<div><img id="change3" src="ảnh/23.png" height="400" width="800" onclick="ol3()"/></div>
+</body>
+</html>
+<script>
+    var count=0;
+    function ol1() {
+        if (count==0) {
+            document.getElementById('change1').src = "ảnh/21.png";
+            count++;
+        } else if (count==1) {
+            document.getElementById('change1').src = "ảnh/11.png";
+            count--;
+        }
+
+    }
+    function ol2() {
+        if (count==0) {
+            document.getElementById('change2').src = "ảnh/12.png";
+            count++;
+        } else if (count==1) {
+            document.getElementById('change2').src = "ảnh/22.png";
+            count--;
+        }
+    }
+    function ol3() {
+        if (count==0) {
+            document.getElementById('change3').src = "ảnh/13.png";
+            count++;
+        } else if (count==1) {
+            document.getElementById('change3').src = "ảnh/23.png";
+            count--;
+        }
+    }
+
+</script>
